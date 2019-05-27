@@ -1,3 +1,17 @@
-<p>
-  products works!
-</p>
+<h1>Trending Movies</h1>
+<div class="moviesbox">
+  <div class="movie" *ngFor="let product of products$">
+    <h4>{{ product.title }}</h4>
+    <div class="movieposter">
+      <img src="" alt="">
+    </div>
+    <div class="moviedata">
+      <h3>{{ product.title }}</h3>
+      <div class="prize">$ {{ product.vote_count }}</div>
+    </div>
+    <div class="movieactions">
+      <a href="">Buy</a>
+      <a href="">Add to cart</a>
+    </div>
+  </div>
+</div>
